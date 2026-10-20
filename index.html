@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sara Nagaty — Web Designer & Developer Portfolio" />
+  <title>Sara Nagaty | Web Designer & Developer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <!-- ========================= NAVBAR ========================= -->
+  <header class="header">
+    <div class="container nav">
+      <a href="#home" class="brand">
+        <span class="brand-mark">S</span>
+        <span class="brand-text">
+          <strong>Sara Nagaty</strong>
+          <small>WEB DESIGNER &amp; DEVELOPER</small>
+        </span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a class="active" href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a class="nav-cta" href="#contact">
+        Let's Talk <span>↗</span>
+      </a>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========================= HERO ========================= -->
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+
+        <div class="hero-copy">
+          <div class="eyebrow">HELLO, I'M</div>
+          <h1>Sara <span>Nagaty</span></h1>
+          <h2>Web Designer &amp; Developer</h2>
+          <p>
+            I design and build modern, responsive websites<br class="desktop-only">
+            that turn ideas into real results.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">View My Work <span>→</span></a>
+            <a class="btn btn-outline" href="assets/Sara-Nagaty-CV.pdf" download>
+              Download CV <span>⇩</span>
+            </a>
+          </div>
+
+          <div class="socials hero-socials">
+            <!-- Replace the # values in js/main.js -->
+            <a id="linkedinHero" href="#" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+            <a id="githubHero" href="#" target="_blank" rel="noopener" aria-label="GitHub">◉</a>
+            <a id="facebookHero" href="#" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+            <a id="emailHero" href="#" aria-label="Email">✉</a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-image-wrap">
+            <img
+              src="assets/images/hero-laptop.jpg"
+              alt="Laptop workspace"
+              class="hero-image"
+              onerror="this.style.display='none'; this.parentElement.classList.add('fallback-hero')"
+            />
+            <div class="hero-fallback-content">
+              <div class="fallback-laptop">
+                <div class="screen">
+                  <div class="screen-glow"></div>
+                </div>
+                <div class="keyboard"></div>
+              </div>
+              <div class="desk-plant"></div>
+              <div class="desk-mug">Good<br>Design<br>Creates<br>Opportunities ♡</div>
+            </div>
+          </div>
+          <div class="handwritten">Design<br>Code<br>Create ♡</div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================= SKILLS ========================= -->
+    <section class="skills-panel section" id="skills">
+      <div class="container">
+        <div class="panel">
+          <div class="panel-heading">
+            <div>
+              <div class="section-kicker"><span></span> MY SKILLS</div>
+              <h3>Tools &amp; Technologies<br><span>I Work With</span></h3>
+            </div>
+            <div class="panel-intro">
+              <p> I use modern technologies and design tools<br>
+                to create clean, fast and user-friendly websites.</p>
+              <a href="#skills-list">View All Skills <span>→</span></a>
+            </div>
+          </div>
+
+          <div class="skill-grid" id="skills-list">
+            <div class="skill-card"><div class="skill-icon html">5</div><strong>HTML</strong></div>
+            <div class="skill-card"><div class="skill-icon css">3</div><strong>CSS</strong></div>
+            <div class="skill-card"><div class="skill-icon js">JS</div><strong>JavaScript</strong></div>
+            <div class="skill-card"><div class="skill-icon react">⚛</div><strong>React</strong></div>
+            <div class="skill-card"><div class="skill-icon tailwind">≋</div><strong>Tailwind CSS</strong></div>
+            <div class="skill-card"><div class="skill-icon figma">●</div><strong>Figma</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= PROJECTS ========================= -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <div class="section-top">
+          <div>
+            <div class="section-kicker"><span></span> FEATURED PROJECTS</div>
+            <h3>My Latest Work</h3>
+          </div>
+          <a href="#projects" class="all-projects">View All Projects <span>→</span></a>
+        </div>
+
+        <div class="project-grid" id="projectGrid"></div>
+      </div>
+    </section>
+
+    <!-- ========================= ABOUT ========================= -->
+    <section class="about section" id="about">
+      <div class="container about-grid">
+
+        <div class="about-art">
+          <img
+            src="assets/images/about.jpg"
+            alt="Creative designer"
+            onerror="this.style.display='none'; this.parentElement.classList.add('fallback-about')"
+          />
+          <div class="about-fallback">
+            <div class="silhouette"></div>
+            <div class="about-script">Better<br>Design<br>Better<br>Experiences<br>♡</div>
+          </div>
+        </div>
+
+        <div class="about-copy">
+          <div class="section-kicker"><span></span> ABOUT ME</div>
+          <h3>Turning ideas into<br><span>beautiful</span> web experiences</h3>
+          <p>
+            I'm a passionate web designer and frontend developer who loves
+            creating clean, modern and responsive websites. I focus on
+            simple design, great user experience and attention to detail.
+          </p>
+
+          <div class="about-features">
+            <div>
+              <i>▣</i>
+              <strong>Clean Design</strong>
+              <small>Modern &amp; minimal<br>interfaces</small>
+            </div>
+            <div>
+              <i>ϟ</i>
+              <strong>Responsive</strong>
+              <small>Looks great on<br>all devices</small>
+            </div>
+            <div>
+              <i>♡</i>
+              <strong>User Focused</strong>
+              <small>Fast &amp; optimized<br>websites</small>
+            </div>
+          </div>
+
+          <a class="btn btn-primary learn-more" href="#contact">Learn More <span>→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= CONTACT CTA ========================= -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="contact-box">
+          <div>
+            <div class="section-kicker"><span></span> GET IN TOUCH</div>
+            <h3>Have a project in mind?</h3>
+            <p>Let's work together and create something amazing!</p>
+          </div>
+
+          <div class="contact-right">
+            <div class="paper-plane">➤</div>
+            <a id="contactButton" class="btn btn-primary" href="#">Contact Me <span>→</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================= FOOTER ========================= -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#home" class="brand">
+        <span class="brand-mark">S</span>
+        <span class="brand-text">
+          <strong>Sara Nagaty</strong>
+          <small>Web Designer &amp; Developer</small>
+        </span>
+      </a>
+
+      <div class="socials footer-socials">
+        <a id="linkedinFooter" href="#" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+        <a id="githubFooter" href="#" target="_blank" rel="noopener">◉</a>
+        <a id="facebookFooter" href="#" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+        <a id="emailFooter" href="#">✉</a>
+      </div>
+
+      <p>© 2026 Sara Nagaty. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
